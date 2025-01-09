@@ -1,0 +1,40 @@
+First you need the install package.json using 
+=====> npm init
+---------------------------------------------
+
+now we need to install some package 
+1. Express
+2. mongoose
+3.bycrpt                 ------------------>>> npm i express mongoose bcrypt jsonwebtoken body-parser
+4.jsonwebtoken
+5.body-parser
+
+==================================================================
+after installing this package we need to create Index.js file and lets start 
+
+
+write this code in index.js 
+
+const express = require("express");
+
+const app = express();
+
+app.get("/", (req, res) => {    
+    res.send("Hello World");
+});
+
+app.listen(3000, () => {
+    console.log("Server is running on port 3000");
+});
+---------------------------------------------------------------------------
+
+and now we will start and check this server so, for start the server we need to add some script in package.json at script section ;
+ Add this ===========>>>>>       "start": "node index.js"  <<<================
+
+=============================================================================
+ now install dotenv package ====>>> npm i dotenv
+=========================================================
+
+
+
+
